@@ -3,5 +3,5 @@ enum TipoEscuela
 {
     preEscolar,
     Primaria,
-    Secundaria;
+    Secundaria,
 }

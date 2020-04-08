@@ -1,4 +1,5 @@
 ﻿using System;
+using CoreEscuela.Entidades;
 
 namespace CoreEscuela
 {
@@ -6,7 +7,8 @@ namespace CoreEscuela
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var escuela = new Escuela("Huerto", "Rosario","Argentina",TipoEscuela.Primaria);
+            System.Console.WriteLine(escuela);
         }
     }
 }

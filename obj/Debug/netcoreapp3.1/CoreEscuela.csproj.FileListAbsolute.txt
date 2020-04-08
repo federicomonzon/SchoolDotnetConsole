@@ -1,0 +1,12 @@
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/bin/Debug/netcoreapp3.1/CoreEscuela.deps.json
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/bin/Debug/netcoreapp3.1/CoreEscuela.runtimeconfig.json
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/bin/Debug/netcoreapp3.1/CoreEscuela.runtimeconfig.dev.json
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/bin/Debug/netcoreapp3.1/CoreEscuela.dll
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/bin/Debug/netcoreapp3.1/CoreEscuela.pdb
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.csprojAssemblyReference.cache
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.csproj.CoreCompileInputs.cache
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.AssemblyInfoInputs.cache
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.AssemblyInfo.cs
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.dll
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.pdb
+/Users/federicomonzon/Desktop/Programacion/Platzi/FundamentosCsharp/CoreEscuela/obj/Debug/netcoreapp3.1/CoreEscuela.genruntimeconfig.cache
