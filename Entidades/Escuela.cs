@@ -15,12 +15,18 @@ namespace CoreEscuela.Entidades
 
         public TipoEscuela TipoEscuelas { get; set; }
 
-        public Escuela (string nombre, string ciudad, string pais, TipoEscuela tipo)
+        public Escuela (string nombre, TipoEscuela tipo)
+        {
+            this.nombre = nombre;
+            TipoEscuelas = tipo;
+        }
+                public Escuela (string nombre, string ciudad, string pais, TipoEscuela tipo)
         {
             this.nombre = nombre;
             Ciudad = ciudad;
             Pais = pais;
             TipoEscuelas = tipo;
+            
         }
 
         public override string ToString()
