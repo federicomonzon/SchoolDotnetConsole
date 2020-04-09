@@ -32,10 +32,19 @@ namespace CoreEscuela
         public static void ImprimirCursos(Curso[] arregloCurso)
         {
             System.Console.WriteLine( "Lista de cursos : " );
+            
+            /*
             for (int i = 0; i < arregloCurso.Length; i++)
             {
                 System.Console.WriteLine($"Nombre :  {arregloCurso[i].Nombre} \nUnique Id : {arregloCurso[i].UniqueID}");   
             }
+            */
+
+            foreach (var curso in arregloCurso)
+            {
+                System.Console.WriteLine($"Nombre :  {curso.Nombre} \nUnique Id : {curso.UniqueID}");   
+            }
+        
         }
     }
 }
