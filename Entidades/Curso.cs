@@ -10,6 +10,6 @@ namespace CoreEscuela.Entidades
 
         public TipoJornada Jornada { get; set; }
 
-        public Curso()=>UniqueID = Guid.NewGuid().ToString();
+        public Curso()=>UniqueID = Guid.NewGuid().ToString(); // Esto genera un codigo unico. 
     }
 }
