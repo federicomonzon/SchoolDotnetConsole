@@ -41,8 +41,27 @@ namespace CoreEscuela
             escuela.Cursos.AddRange(otraColeccion);
 
 
+            //Esta opcion nos deja eliminar una coleccion dentro que hayamos agregado externa
+            //otraColeccion.Clear();
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+            //Otros  metodos para eliminar cursos:
+
+            //Opcion 1:
+            //este remueve tan solo un objeto;
+            //Primero agregamos un nuevo curso a la clase
+            Curso temp = new Curso{Nombre = "999 - Vacaciones", Jornada = TipoJornada.Noche};
+            escuela.Cursos.Add(temp);
+
+            //luego accedemos a su hash que es es un uniqueID de la manera que C# borra un elemento con este metodo
+ //           WriteLine("Curso Hash code : " + temp.GetHashCode());
+
+            //Borramos el curso
+//            escuela.Cursos.Remove(temp);
+            
             /*
-            //Agregando cursos a escuela
+            //Agregando cursos a escuela con arrays
             escuela.Cursos =  new Curso[]{
                     new Curso{Nombre = "101"},
                     new Curso{Nombre = "202"},
@@ -50,6 +69,40 @@ namespace CoreEscuela
             };*/
 
             ImprimirCursos(escuela);
+
+
+            //Opcion numero 2 (predicado)
+/*
+Este tipo de remover un elemento utiliza un metodo privado booleano que analiza cada curso en este caso y 
+lo va a comprar con el que nosotros queremos borra , vease predicado metodo
+*/
+
+
+/*
+Lo que estoy aclarando con esta funcion es que voy a proteger mi algoritmo removeAll para qeu no se le pase
+cualquier otro dato que no sea un objeto
+seria como ponerle las reglas y en este caso seria:
+@ Predicador vas a analizar la Colleccion cursos;
+@ Predicador te voy a llamar miAlgoritmo;
+@Vas a ser igual a "predicado" que es un parametro dentro del metedo RemoveAll
+@RemoveAll es un metodo dentro de tu clase predicador
+@El parametro "predicado" es un metodo privado booleano que analiza los objetos de Cursos
+@ y es el siguiente         
+    private static bool predicado(Curso CursoObj)
+        {
+            return CursoObj.Nombre == "601";
+        }
+*/
+
+            Predicate<Curso> miAlgoritmo = predicado;
+            escuela.Cursos.RemoveAll(predicado);
+
+            ImprimirCursos(escuela);
+        }
+
+        private static bool predicado(Curso CursoObj)
+        {
+            return CursoObj.Nombre == "601";
         }
 
         private static void ImprimirCursos(Escuela escuela) // Imprimir cursos de una escuela
