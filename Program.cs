@@ -25,7 +25,7 @@ namespace CoreEscuela
             escuela.Cursos.Add(new Curso{Nombre ="202",Jornada = TipoJornada.Tarder});
             escuela.Cursos.Add(new Curso{Nombre ="302",Jornada = TipoJornada.Tarder});
 
-
+            
             //creadno otra coleccion para aderirlo otras propiedades dentro de colection
             //desde una coleccion externa fuera de la clase escuela 
 
@@ -78,7 +78,8 @@ lo va a comprar con el que nosotros queremos borra , vease predicado metodo
 */
 
 
-/*
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Lo que estoy aclarando con esta funcion es que voy a proteger mi algoritmo removeAll para qeu no se le pase
 cualquier otro dato que no sea un objeto
 seria como ponerle las reglas y en este caso seria:
@@ -92,9 +93,13 @@ seria como ponerle las reglas y en este caso seria:
         {
             return CursoObj.Nombre == "601";
         }
-*/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-            Predicate<Curso> miAlgoritmo = predicado;
+/*
+########################################################################
+
+
+// es opcional ahora            Predicate<Curso> miAlgoritmo = predicado;
             escuela.Cursos.RemoveAll(predicado);
 
             ImprimirCursos(escuela);
@@ -105,17 +110,38 @@ seria como ponerle las reglas y en este caso seria:
             return CursoObj.Nombre == "601";
         }
 
-        private static void ImprimirCursos(Escuela escuela) // Imprimir cursos de una escuela
+        #########################################################################*/
+
+/*  ESTA ES LA MANERA  CON DELEGADO DE HACER LO MISMO QUE ESTA ARRIBA*
+
+        escuela.Cursos.RemoveAll(delegate(Curso cur)
+                                {
+                                    return cur.Nombre =="601";
+                                });
+
+         
+    
+################################################################################*/
+
+        /*Opcion lambda de lo mismo que arriba 
+        El compilado por detras esta haciendo esto:   
+        escuela.Cursos.RemoveAll(delegate(cur)=> cur.Nombre =="601");    
+       */
+            escuela.Cursos.RemoveAll((cur)=> cur.Nombre == "601" && cur.Jornada == TipoJornada.Tarder);
+
+
+        }
+         private static void ImprimirCursos(Escuela escuela)
         {
             WriteLine("==========================");
             WriteLine("Cursos de la Escuelas : ");
             WriteLine("==========================");
-            
+
             // Operador "?" es un "OR" primero va a chequear escuela que no sea null
             //luego si es true (distinto de null va a chequear Cursos)seria lo mismo que poner
             //if(escuela && escuela.Cursos != null)
-            
-            if (escuela?.Cursos != null) 
+
+            if (escuela?.Cursos != null)
             {
                 foreach (var cursos in escuela.Cursos)//recorrer e imprimir el curso de un obj escuela
                 {
@@ -125,8 +151,5 @@ seria como ponerle las reglas y en este caso seria:
             }
 
         }
-
-        
-        
     }
 }
