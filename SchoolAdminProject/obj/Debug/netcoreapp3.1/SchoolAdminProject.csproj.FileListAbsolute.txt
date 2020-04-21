@@ -1,0 +1,12 @@
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.csprojAssemblyReference.cache
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.csproj.CoreCompileInputs.cache
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.AssemblyInfoInputs.cache
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.AssemblyInfo.cs
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/bin/Debug/netcoreapp3.1/SchoolAdminProject.deps.json
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/bin/Debug/netcoreapp3.1/SchoolAdminProject.runtimeconfig.json
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/bin/Debug/netcoreapp3.1/SchoolAdminProject.runtimeconfig.dev.json
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/bin/Debug/netcoreapp3.1/SchoolAdminProject.dll
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/bin/Debug/netcoreapp3.1/SchoolAdminProject.pdb
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.dll
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.pdb
+/Users/federicomonzon/Desktop/Programacion/SchoolAdminProject/obj/Debug/netcoreapp3.1/SchoolAdminProject.genruntimeconfig.cache
